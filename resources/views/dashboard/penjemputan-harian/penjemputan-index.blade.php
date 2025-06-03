@@ -70,9 +70,9 @@
                                 {{-- <td>{{ $penjemput->nama_penjemput }}</td> --}}
                                 <td>{{ $penjemput->waktu_dijemput ? \Carbon\Carbon::parse($penjemput->waktu_dijemput)->isoFormat('H:mm') : '-' }}
                                 </td>
-                                <td>{{ $penjemput->confirm_pic_at ? \Carbon\Carbon::parse($penjemput->confirm_pic_at)->isoFormat('H:m') : '-' }}
+                                <td>{{ $penjemput->confirm_pic_at ? \Carbon\Carbon::parse($penjemput->confirm_pic_at)->isoFormat('H:mm') : '-' }}
                                 </td>
-                                <td>{{ $penjemput->confirm_satpam_at ? \Carbon\Carbon::parse($penjemput->confirm_satpam_at)->isoFormat('H:m') : '-' }}
+                                <td>{{ $penjemput->confirm_satpam_at ? \Carbon\Carbon::parse($penjemput->confirm_satpam_at)->isoFormat('H:mm') : '-' }}
                                 </td>
 
                                 {{-- <td>{{ \Carbon\Carbon::parse($penjemput->waktu_dijemput)->locale('id_ID')->isoFormat('H:s dddd, d/m/Y') }}</td>

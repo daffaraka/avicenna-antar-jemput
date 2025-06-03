@@ -233,7 +233,7 @@ class PenjemputanHarianController extends Controller
         dispatch(new SendPenjemputanNotification($penjemputanHarian->siswa));
 
         return redirect()->route('penjemputan-harian.index')
-            ->with('success', 'Atas nama ' + $penjemputanHarian->siswa->nama_siswa. ' sudah dikonfirmasi keluar oleh Admin.');
+            ->with('success', 'Atas nama '.$penjemputanHarian->siswa->nama_siswa. ' sudah dikonfirmasi keluar oleh Admin.');
     }
 
 

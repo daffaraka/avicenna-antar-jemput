@@ -32,7 +32,7 @@
             scannerResult = decodedText;
 
             $.ajax({
-                url: '/penjemput-datang',
+                url: '{{ route('penjemputDatang') }}',
                 type: 'POST',
                 data: {
                     _token: '{{ csrf_token() }}',
